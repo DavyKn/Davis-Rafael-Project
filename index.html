@@ -1,209 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>survey-form</title>
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="container">
-      <header class="header">
-        <h1 id="title" class="text-center">Davis & RAfael Survey Form</h1>
-        <p id="description" class="description text-center">
-          Thank you for taking the time to help us improve the platform
-        </p>
-      </header>
-      <form id="survey-form">
-        <div class="form-group">
-          <label id="name-label" for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-control"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label id="email-label" for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="Enter your Email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label id="number-label" for="number"
-            >Age<span class="clue">(optional)</span></label
-          >
-          <input
-            type="number"
-            name="age"
-            id="number"
-            min="10"
-            max="99"
-            class="form-control"
-            placeholder="Age"
-          />
-        </div>
-        <div class="form-group">
-          <p>Which option best describes your current role?</p>
-          <select id="dropdown" name="role" class="form-control" required>
-            <option disabled selected value>Select current role</option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="preferNo">Prefer not to say</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-    
-        <div class="form-group">
-          <p>Would you like to be taught by us</p>
-          <label>
-            <input
-              name="user-recommend"
-              value="definitely"
-              type="radio"
-              class="input-radio"
-              checked
-            />Definitely</label
-          >
-          <label>
-            <input
-              name="user-recommend"
-              value="maybe"
-              type="radio"
-              class="input-radio"
-            />Maybe</label
-          >
-    
-          <label
-            ><input
-              name="user-recommend"
-              value="not-sure"
-              type="radio"
-              class="input-radio"
-            />Not sure</label
-          >
-        </div>
-    
-        <div class="form-group">
-          <p>
-            Which lessons in particular ?
+        <header class="header">
+          <h1 id="title" class="text-center">Davis & Rafael Survey Form</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to help us improve the platform
           </p>
-          <select id="most-like" name="mostLike" class="form-control" required>
-            <option disabled selected value>Select an option</option>
-            <option value="Javascript">Challenges</option>
-            <option value="HTML">Projects</option>
-            <option value="CSS">Community</option>
-            <option value="GIT">Open Source</option>
-          </select>
-        </div>
-    
-        <div class="form-group">
-          <p>
-            What would you like to see improved?
-            <span class="clue">(Check all that apply)</span>
-          </p>
-    
-          <label
-            ><input
-              name="prefer"
-              value="video conferencing"
-              type="checkbox"
-              class="input-checkbox"
-            />video conferencing</label
-          >
-          <label>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
             <input
-              name="prefer"
-              value="one on one tutors"
-              type="checkbox"
-              class="input-checkbox"
-            />one on one tutors</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="data-visualization"
-              type="checkbox"
-              class="input-checkbox"
-            />Data Visualization</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="challenges"
-              type="checkbox"
-              class="input-checkbox"
-            />Challenges</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="open-source-community"
-              type="checkbox"
-              class="input-checkbox"
-            />Open Source Community</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="gitter-help-rooms"
-              type="checkbox"
-              class="input-checkbox"
-            />Gitter help rooms</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="videos"
-              type="checkbox"
-              class="input-checkbox"
-            />Videos</label
-          >
-         
-        </div>
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="Nationality-label" for="Nationality">Nationality</label>
+            <input
+              type="Nationality"
+              name="Nationality"
+              id="Nationality"
+              class="form-control"
+              placeholder="Country of Origin"
+              required
+            />
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(Mandatory)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Would you like to be taught by us</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Not sure</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Which lessons in particular ?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="Javascript">Javascript</option>
+              <option value="HTML">Html</Html></option>
+              <option value="CSS">Css</option>
+              <option value="GIT">GIT</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What would would be you ideal method of learning?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="video conferencing"
+                type="checkbox"
+                class="input-checkbox"
+              />video conferencing</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="one on one tutors"
+                type="checkbox"
+                class="input-checkbox"
+              />one on one tutors</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="study materials"
+                type="checkbox"
+                class="input-checkbox"
+              />study materials</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Challenges</label
+            >
+            
+           
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
     
-        <div class="form-group">
-          <p>Any comments or suggestions?</p>
-          <textarea
-            id="comments"
-            class="input-textarea"
-            name="comment"
-            placeholder="Enter your comment here..."
-          ></textarea>
-        </div>
-    
-        <div class="form-group">
-          <button type="submit" id="submit" class="submit-button">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
-
-    </div>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
-  </body>
+</body>
 </html>
