@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+
+    text-align: center;
+    background-color: brown;
+    padding: 25px 0;
+
+}
+
+.form-center{
+
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    padding-top: 20px;
+    
+}
+
+.form-group{
+
+   padding: 10px 0px 10px 0px;
+
+}
